@@ -1,5 +1,2 @@
-.ipynb_checkpoints
+*.ipynb_checkpoints
 ICP_Responders/RawData
-ICP_Responders/.ipynb_checkpoints
-ICP_Responders/FinalTables/.ipynb_checkpoints
-ICP_Responders/ML/.ipynb_checkpoints
