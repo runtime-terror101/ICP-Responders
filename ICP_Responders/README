@@ -1,4 +1,4 @@
-Dependencies: ######
+Dependencies: 
 Jupyter notebook
 R kernel
 Python kernel
@@ -8,6 +8,15 @@ ssconvert (part of gnumeric)
 
 Start at:
 
-1) Bash_fetch_data to fetch all data
-
-
+1) Bash_fetch_data to fetch all data (I used RawData as the name of the folder so path will be changed in R notebooks)
+2) Gide et al., Cancer Cell 2019.ipynb, Hugo et al., Cell 2016.ipynb, ....... (For formatting data, no preprocessing)
+   Outputs are stored in ICP_Responders/FinalTables
+3) Combine_Tables.ipynb in FinalTables folder used to create 2 master tables for clinical and expression data 
+    Final_table_clinical.csv
+    Final_table_response_and_expression.csv
+    and preliminary analysis to detect age/gender/response bias in samples
+4) Pre-Processing Clinical.ipynb
+   Pre-Processing Gene Expression.ipynb
+   (All of Feature Selection)
+   
+3) and 4) will be edited to separate PD1 and PD1+CTLA4 data
