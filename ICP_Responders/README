@@ -4,7 +4,7 @@ R kernel
 Python kernel
 Bash kernel (only for downloads)
 wget
-ssconvert
+ssconvert (part of gnumeric)
 
 Start at:
 
