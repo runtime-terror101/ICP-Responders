@@ -1,1 +1,13 @@
-Trial readme file
+Dependencies:
+Jupyter notebook
+R kernel
+Python kernel
+Bash kernel (only for downloads)
+wget
+ssconvert
+
+Start at:
+
+1) Bash_fetch_data to fetch all data
+
+
