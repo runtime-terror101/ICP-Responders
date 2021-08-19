@@ -1,0 +1,15 @@
+#only Pct (0.00%) of alignments had paired gene anchors
+chr21	38423562	+	chr11	70613011	+	0	0	0	TMPRSS2-exon2_ERG-exon4-5178	38403688	1S22M19700N152M26S	70613012	175S17M9S	1	201	170	182	182	1	GRPundef	[{"exon":{"token":"ERG^ENSG00000157554.19^38423410^38423561^-","orient":"-","chr":"chr21","gene":"ERG^ENSG00000157554.19","rend":"38423561","lend":"38423410"},"anchor_length":152,"delta":0,"sense_or_antisense":"antisense","chr":"chr21","gene_id":"ERG^ENSG00000157554.19","pt_exon":"38423561","pt_align":38423561}]	.
+
+#only Pct (0.00%) of alignments had paired gene anchors
+chr9	128521723	-	chr21	38423562	-	0	0	0	TMPRSS2-exon2_ERG-exon4-5120	128521724	177S18M	38403685	25M19700N152M18S	1	195	167	180	180	1	GRPundef	.	[{"exon":{"token":"ERG^ENSG00000157554.19^38423410^38423561^-","orient":"-","chr":"chr21","gene":"ERG^ENSG00000157554.19","rend":"38423561","lend":"38423410"},"anchor_length":152,"chr":"chr21","delta":0,"sense_or_antisense":"sense","pt_align":38423561,"pt_exon":"38423561","gene_id":"ERG^ENSG00000157554.19"}]
+
+#only Pct (0.00%) of alignments had paired gene anchors
+chr4	84378154	-	chr21	38402599	-	1	0	0	TMPRSS2-exon2_ERG-exon4-3046	84378155	134S16M	38391024	19M616N57M660N73M-756p23M660N69M10112N42M16S	1	300	269	281	281	0	GRPundef	.	[{"sense_or_antisense":"sense","delta":10154,"chr":"chr21","anchor_length":42,"exon":{"rend":"38392444","lend":"38392376","gene":"ERG^ENSG00000157554.19","chr":"chr21","orient":"-","token":"ERG^ENSG00000157554.19^38392376^38392444^-"},"pt_exon":"38392444","gene_id":"ERG^ENSG00000157554.19","pt_align":38402598}]
+
+#only Pct (0.00%) of alignments had paired gene anchors
+chr21	32651098	+	chr21	38423562	-	0	0	0	TMPRSS2-exon2_ERG-exon4-288	32651081	8S17M188S	38403674	36M19700N152M25S	1	213	184	196	196	1	GRPundef	.	[{"pt_align":38423561,"pt_exon":"38423561","gene_id":"ERG^ENSG00000157554.19","chr":"chr21","sense_or_antisense":"sense","delta":0,"anchor_length":152,"exon":{"token":"ERG^ENSG00000157554.19^38423410^38423561^-","orient":"-","chr":"chr21","gene":"ERG^ENSG00000157554.19","rend":"38423561","lend":"38423410"}}]
+
+#only Pct (0.00%) of alignments had paired gene anchors
+chr13	89044249	-	chr21	38423562	-	1	0	1	TMPRSS2-exon2_ERG-exon4-5528	89044250	198S15M	38403664	46M19700N152M15S	1	213	194	208	208	1	GRPundef	.	[{"exon":{"token":"ERG^ENSG00000157554.19^38423410^38423561^-","orient":"-","chr":"chr21","gene":"ERG^ENSG00000157554.19","rend":"38423561","lend":"38423410"},"anchor_length":152,"chr":"chr21","delta":0,"sense_or_antisense":"sense","pt_align":38423561,"pt_exon":"38423561","gene_id":"ERG^ENSG00000157554.19"}]
+

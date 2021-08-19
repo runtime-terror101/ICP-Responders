@@ -1,0 +1,392 @@
+STAR version=2.7.9a
+STAR compilation time,server,dir=2021-05-04T09:43:56-0400 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+/home/jp/anaconda3/bin/STAR --genomeDir /home/jp/STAR-Fusion-v1.10.0/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa.star.idx --outReadsUnmapped None --chimSegmentMin 12 --chimJunctionOverhangMin 8 --chimOutJunctionFormat 1 --alignSJDBoverhangMin 10 --alignMatesGapMax 100000 --alignIntronMax 100000 --alignSJstitchMismatchNmax 5 -1 5 5 --runThreadN 10 --outSAMstrandField intronMotif --outSAMunmapped Within --alignInsertionFlush Right --alignSplicedMateMapLminOverLmate 0 --alignSplicedMateMapLmin 30 --outSAMtype BAM Unsorted --readFilesIn /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion1.fq /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion2.fq --outSAMattrRGline ID:GRPundef --chimMultimapScoreRange 3 --chimScoreJunctionNonGTAG -4 --chimMultimapNmax 20 --chimNonchimScoreDropMin 10 --peOverlapNbasesMin 12 --peOverlapMMp 0.1 --genomeLoad NoSharedMemory --twopassMode Basic --quantMode GeneCounts
+##### Initial USER parameters from Command Line:
+###### All USER parameters from Command Line:
+genomeDir                     /home/jp/STAR-Fusion-v1.10.0/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa.star.idx     ~RE-DEFINED
+outReadsUnmapped              None     ~RE-DEFINED
+chimSegmentMin                12     ~RE-DEFINED
+chimJunctionOverhangMin       8     ~RE-DEFINED
+chimOutJunctionFormat         1        ~RE-DEFINED
+alignSJDBoverhangMin          10     ~RE-DEFINED
+alignMatesGapMax              100000     ~RE-DEFINED
+alignIntronMax                100000     ~RE-DEFINED
+alignSJstitchMismatchNmax     5   -1   5   5        ~RE-DEFINED
+runThreadN                    10     ~RE-DEFINED
+outSAMstrandField             intronMotif     ~RE-DEFINED
+outSAMunmapped                Within        ~RE-DEFINED
+alignInsertionFlush           Right     ~RE-DEFINED
+alignSplicedMateMapLminOverLmate0     ~RE-DEFINED
+alignSplicedMateMapLmin       30     ~RE-DEFINED
+outSAMtype                    BAM   Unsorted        ~RE-DEFINED
+readFilesIn                   /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion1.fq   /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion2.fq        ~RE-DEFINED
+outSAMattrRGline              ID:GRPundef        ~RE-DEFINED
+chimMultimapScoreRange        3     ~RE-DEFINED
+chimScoreJunctionNonGTAG      -4     ~RE-DEFINED
+chimMultimapNmax              20     ~RE-DEFINED
+chimNonchimScoreDropMin       10     ~RE-DEFINED
+peOverlapNbasesMin            12     ~RE-DEFINED
+peOverlapMMp                  0.1     ~RE-DEFINED
+genomeLoad                    NoSharedMemory     ~RE-DEFINED
+twopassMode                   Basic     ~RE-DEFINED
+quantMode                     GeneCounts        ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        10
+genomeDir                         /home/jp/STAR-Fusion-v1.10.0/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa.star.idx
+genomeLoad                        NoSharedMemory
+readFilesIn                       /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion1.fq   /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion2.fq   
+outReadsUnmapped                  None
+outSAMtype                        BAM   Unsorted   
+outSAMstrandField                 intronMotif
+outSAMunmapped                    Within   
+outSAMattrRGline                  ID:GRPundef   
+alignIntronMax                    100000
+alignMatesGapMax                  100000
+alignSJDBoverhangMin              10
+alignSJstitchMismatchNmax         5   -1   5   5   
+alignSplicedMateMapLmin           30
+alignSplicedMateMapLminOverLmate    0
+alignInsertionFlush               Right
+peOverlapNbasesMin                12
+peOverlapMMp                      0.1
+chimSegmentMin                    12
+chimScoreJunctionNonGTAG          -4
+chimJunctionOverhangMin           8
+chimMultimapNmax                  20
+chimMultimapScoreRange            3
+chimNonchimScoreDropMin           10
+chimOutJunctionFormat             1   
+quantMode                         GeneCounts   
+twopassMode                       Basic
+
+-------------------------------
+##### Final effective command line:
+/home/jp/anaconda3/bin/STAR   --runThreadN 10   --genomeDir /home/jp/STAR-Fusion-v1.10.0/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa.star.idx   --genomeLoad NoSharedMemory   --readFilesIn /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion1.fq   /home/jp/ManualFusions/TMPRSS2-ERG/WildType_Fusion_Quantify/HighWT_LowFusion2.fq      --outReadsUnmapped None   --outSAMtype BAM   Unsorted      --outSAMstrandField intronMotif   --outSAMunmapped Within      --outSAMattrRGline ID:GRPundef      --alignIntronMax 100000   --alignMatesGapMax 100000   --alignSJDBoverhangMin 10   --alignSJstitchMismatchNmax 5   -1   5   5      --alignSplicedMateMapLmin 30   --alignSplicedMateMapLminOverLmate 0   --alignInsertionFlush Right   --peOverlapNbasesMin 12   --peOverlapMMp 0.1   --chimSegmentMin 12   --chimScoreJunctionNonGTAG -4   --chimJunctionOverhangMin 8   --chimMultimapNmax 20   --chimMultimapScoreRange 3   --chimNonchimScoreDropMin 10   --chimOutJunctionFormat 1      --quantMode GeneCounts      --twopassMode Basic
+----------------------------------------
+
+Number of fastq files for each mate = 1
+WARNING --outSAMattrRG defines a read group, therefore STAR will output RG attribute
+WARNING --outSAMstrandField=intronMotif, therefore STAR will output XS attribute
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --runThreadN 4   --genomeDir /seq/RNASEQ/__ctat_genome_lib_building/Mar2021/GRCh38_gencode_v37_CTAT_lib_Mar012021/ctat_genome_lib_build_dir/ref_genome.fa.star.idx   --genomeFastaFiles /seq/RNASEQ/__ctat_genome_lib_building/Mar2021/GRCh38_gencode_v37_CTAT_lib_Mar012021/GRCh38.primary_assembly.genome.fa.pseudo_masked.fa      --genomeChrBinNbits 16   --limitGenomeGenerateRAM 40419136213   --sjdbGTFfile /seq/RNASEQ/__ctat_genome_lib_building/Mar2021/GRCh38_gencode_v37_CTAT_lib_Mar012021/gencode.v37.annotation.gtf.revised.custom.gtf   --sjdbOverhang 150
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              /seq/RNASEQ/__ctat_genome_lib_building/Mar2021/GRCh38_gencode_v37_CTAT_lib_Mar012021/GRCh38.primary_assembly.genome.fa.pseudo_masked.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             16     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  150     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   /seq/RNASEQ/__ctat_genome_lib_building/Mar2021/GRCh38_gencode_v37_CTAT_lib_Mar012021/gencode.v37.annotation.gtf.revised.custom.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               3225043118   25262353185        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 194
+1	chr1	248956422	0
+2	chr2	242193529	248971264
+3	chr3	198295559	491192320
+4	chr4	190214555	689504256
+5	chr5	181538259	879755264
+6	chr6	170805979	1061355520
+7	chr7	159345973	1232207872
+8	chr8	145138636	1391591424
+9	chr9	138394717	1536753664
+10	chr10	133797422	1675165696
+11	chr11	135086622	1808990208
+12	chr12	133275309	1944125440
+13	chr13	114364328	2077425664
+14	chr14	107043718	2191851520
+15	chr15	101991189	2298937344
+16	chr16	90338345	2400976896
+17	chr17	83257441	2491351040
+18	chr18	80373285	2574647296
+19	chr19	58617616	2655059968
+20	chr20	64444167	2713714688
+21	chr21	46709983	2778202112
+22	chr22	50818468	2824929280
+23	chrX	156040895	2875785216
+24	chrY	57227415	3031826432
+25	chrM	16569	3089104896
+26	GL000008.2	209709	3089170432
+27	GL000009.2	201709	3089432576
+28	GL000194.1	191469	3089694720
+29	GL000195.1	182896	3089891328
+30	GL000205.2	185591	3090087936
+31	GL000208.1	92689	3090284544
+32	GL000213.1	164239	3090415616
+33	GL000214.1	137718	3090612224
+34	GL000216.2	176608	3090808832
+35	GL000218.1	161147	3091005440
+36	GL000219.1	179198	3091202048
+37	GL000220.1	161802	3091398656
+38	GL000221.1	155397	3091595264
+39	GL000224.1	179693	3091791872
+40	GL000225.1	211173	3091988480
+41	GL000226.1	15008	3092250624
+42	KI270302.1	2274	3092316160
+43	KI270303.1	1942	3092381696
+44	KI270304.1	2165	3092447232
+45	KI270305.1	1472	3092512768
+46	KI270310.1	1201	3092578304
+47	KI270311.1	12399	3092643840
+48	KI270312.1	998	3092709376
+49	KI270315.1	2276	3092774912
+50	KI270316.1	1444	3092840448
+51	KI270317.1	37690	3092905984
+52	KI270320.1	4416	3092971520
+53	KI270322.1	21476	3093037056
+54	KI270329.1	1040	3093102592
+55	KI270330.1	1652	3093168128
+56	KI270333.1	2699	3093233664
+57	KI270334.1	1368	3093299200
+58	KI270335.1	1048	3093364736
+59	KI270336.1	1026	3093430272
+60	KI270337.1	1121	3093495808
+61	KI270338.1	1428	3093561344
+62	KI270340.1	1428	3093626880
+63	KI270362.1	3530	3093692416
+64	KI270363.1	1803	3093757952
+65	KI270364.1	2855	3093823488
+66	KI270366.1	8320	3093889024
+67	KI270371.1	2805	3093954560
+68	KI270372.1	1650	3094020096
+69	KI270373.1	1451	3094085632
+70	KI270374.1	2656	3094151168
+71	KI270375.1	2378	3094216704
+72	KI270376.1	1136	3094282240
+73	KI270378.1	1048	3094347776
+74	KI270379.1	1045	3094413312
+75	KI270381.1	1930	3094478848
+76	KI270382.1	4215	3094544384
+77	KI270383.1	1750	3094609920
+78	KI270384.1	1658	3094675456
+79	KI270385.1	990	3094740992
+80	KI270386.1	1788	3094806528
+81	KI270387.1	1537	3094872064
+82	KI270388.1	1216	3094937600
+83	KI270389.1	1298	3095003136
+84	KI270390.1	2387	3095068672
+85	KI270391.1	1484	3095134208
+86	KI270392.1	971	3095199744
+87	KI270393.1	1308	3095265280
+88	KI270394.1	970	3095330816
+89	KI270395.1	1143	3095396352
+90	KI270396.1	1880	3095461888
+91	KI270411.1	2646	3095527424
+92	KI270412.1	1179	3095592960
+93	KI270414.1	2489	3095658496
+94	KI270417.1	2043	3095724032
+95	KI270418.1	2145	3095789568
+96	KI270419.1	1029	3095855104
+97	KI270420.1	2321	3095920640
+98	KI270422.1	1445	3095986176
+99	KI270423.1	981	3096051712
+100	KI270424.1	2140	3096117248
+101	KI270425.1	1884	3096182784
+102	KI270429.1	1361	3096248320
+103	KI270435.1	92983	3096313856
+104	KI270438.1	112505	3096444928
+105	KI270442.1	392061	3096576000
+106	KI270448.1	7992	3096969216
+107	KI270465.1	1774	3097034752
+108	KI270466.1	1233	3097100288
+109	KI270467.1	3920	3097165824
+110	KI270468.1	4055	3097231360
+111	KI270507.1	5353	3097296896
+112	KI270508.1	1951	3097362432
+113	KI270509.1	2318	3097427968
+114	KI270510.1	2415	3097493504
+115	KI270511.1	8127	3097559040
+116	KI270512.1	22689	3097624576
+117	KI270515.1	6361	3097690112
+118	KI270516.1	1300	3097755648
+119	KI270517.1	3253	3097821184
+120	KI270518.1	2186	3097886720
+121	KI270519.1	138126	3097952256
+122	KI270521.1	7642	3098148864
+123	KI270522.1	5674	3098214400
+124	KI270528.1	2983	3098279936
+125	KI270529.1	1899	3098345472
+126	KI270530.1	2168	3098411008
+127	KI270538.1	91309	3098476544
+128	KI270539.1	993	3098607616
+129	KI270544.1	1202	3098673152
+130	KI270548.1	1599	3098738688
+131	KI270579.1	31033	3098804224
+132	KI270580.1	1553	3098869760
+133	KI270581.1	7046	3098935296
+134	KI270582.1	6504	3099000832
+135	KI270583.1	1400	3099066368
+136	KI270584.1	4513	3099131904
+137	KI270587.1	2969	3099197440
+138	KI270588.1	6158	3099262976
+139	KI270589.1	44474	3099328512
+140	KI270590.1	4685	3099394048
+141	KI270591.1	5796	3099459584
+142	KI270593.1	3041	3099525120
+143	KI270706.1	175055	3099590656
+144	KI270707.1	32032	3099787264
+145	KI270708.1	127682	3099852800
+146	KI270709.1	66860	3099983872
+147	KI270710.1	40176	3100114944
+148	KI270711.1	42210	3100180480
+149	KI270712.1	176043	3100246016
+150	KI270713.1	40745	3100442624
+151	KI270714.1	41717	3100508160
+152	KI270715.1	161471	3100573696
+153	KI270716.1	153799	3100770304
+154	KI270717.1	40062	3100966912
+155	KI270718.1	38054	3101032448
+156	KI270719.1	176845	3101097984
+157	KI270720.1	39050	3101294592
+158	KI270721.1	100316	3101360128
+159	KI270722.1	194050	3101491200
+160	KI270723.1	38115	3101687808
+161	KI270724.1	39555	3101753344
+162	KI270725.1	172810	3101818880
+163	KI270726.1	43739	3102015488
+164	KI270727.1	448248	3102081024
+165	KI270728.1	1872759	3102539776
+166	KI270729.1	280839	3104440320
+167	KI270730.1	112551	3104768000
+168	KI270731.1	150754	3104899072
+169	KI270732.1	41543	3105095680
+170	KI270733.1	179772	3105161216
+171	KI270734.1	165050	3105357824
+172	KI270735.1	42811	3105554432
+173	KI270736.1	181920	3105619968
+174	KI270737.1	103838	3105816576
+175	KI270738.1	99375	3105947648
+176	KI270739.1	73985	3106078720
+177	KI270740.1	37240	3106209792
+178	KI270741.1	157432	3106275328
+179	KI270742.1	186739	3106471936
+180	KI270743.1	210658	3106668544
+181	KI270744.1	168472	3106930688
+182	KI270745.1	41891	3107127296
+183	KI270746.1	66486	3107192832
+184	KI270747.1	198735	3107323904
+185	KI270748.1	93321	3107586048
+186	KI270749.1	158759	3107717120
+187	KI270750.1	148850	3107913728
+188	KI270751.1	150742	3108110336
+189	KI270752.1	27745	3108306944
+190	KI270753.1	62944	3108372480
+191	KI270754.1	40191	3108438016
+192	KI270755.1	36723	3108503552
+193	KI270756.1	79590	3108569088
+194	KI270757.1	71251	3108700160
+--sjdbOverhang = 150 taken from the generated genome
+Started loading the genome: Tue Jun  8 09:43:22 2021
+
+Genome: size given as a parameter = 3225043118
+SA: size given as a parameter = 25262353185
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=3225043118;  nSAbyte=25262353185
+GstrandBit=32   SA number of indices=6124206832
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 3225043118 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 3225043118 bytes
+SA file size: 25262353185 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 25262353185 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Tue Jun  8 09:43:30 2021
+
+Processing splice junctions database sjdbN=386086,   pGe.sjdbOverhang=150 
+To accommodate alignIntronMax=100000 redefined winBinNbits=16
+To accommodate alignIntronMax=100000 and alignMatesGapMax=100000, redefined winFlankNbins=2 and winAnchorDistNbins=4
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #4
+Completed: thread #3
+Completed: thread #5
+Completed: thread #6
+Completed: thread #7
+Completed: thread #8
+Completed: thread #0
+Completed: thread #9
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+Jun 08 09:43:38   Loaded database junctions from the generated genome /home/jp/STAR-Fusion-v1.10.0/GRCh38_gencode_v37_CTAT_lib_Mar012021.plug-n-play/ctat_genome_lib_build_dir/ref_genome.fa.star.idx//sjdbList.out.tab: 386086 total junctions
+
+Jun 08 09:43:38   Loaded database junctions from the 1st pass file: ./_STARpass1//SJ.out.tab: 386110 total junctions
+
+Jun 08 09:43:39   Finished preparing junctions
+Jun 08 09:43:39 ..... inserting junctions into the genome indices
+Jun 08 09:43:40   Finished SA search: number of new junctions=0, old junctions=386086
+Jun 08 09:43:40   Finished sorting SA indicesL nInd=0
+Genome size with junctions=3225043118  3108831232   116211886
+GstrandBit1=32   GstrandBit=32
+Jun 08 09:44:34   Finished inserting junction indices
+Jun 08 09:44:36   Finished SAi
+Jun 08 09:44:36 ..... finished inserting junctions into genome
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread0 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread1 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread2 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread3 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread4 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread5 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread6 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread7 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread8 ... ok
+Opening the file: ./_STARtmp//Chimeric.out.junction.thread9 ... ok
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #3
+Completed: thread #5
+Completed: thread #6
+Completed: thread #7
+Completed: thread #0
+Completed: thread #9
+Completed: thread #8
+Completed: thread #4
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+ALL DONE!
